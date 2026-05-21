@@ -1,0 +1,12 @@
+# Báo cáo bài tập lớn
+Báo cáo bài tập lớn.docx
+*.docx
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Dữ liệu tự sinh và ảnh kết quả
+diempixel.dat
+bsplinecurve.dat
+result.png
