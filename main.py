@@ -78,7 +78,7 @@ def image_to_diempixel(image_path, output_filename="diempixel.dat"):
     1) Đọc ảnh, tìm xương chữ ký và xuất tọa độ pixel ra file diempixel.dat
     """
     print(f"Loading {image_path}...")
-    img = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
+    img = cv2.imdecode(np.fromfile(image_path, dtype=np.uint8), cv2.IMREAD_GRAYSCALE) # // modified
     if img is None:
         print("Error: Could not load image.")
         return None, 0
